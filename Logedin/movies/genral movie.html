@@ -1,0 +1,249 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>MovieLand</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <img src="../img/NDLogo.png" width="150" height=" 70px">  
+            </div>
+
+
+
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item"> <a href="../index.html"><img src="../img/NDHome.png" width="90" height=" 40px"></a> </li>
+                    <li class="menu-list-item"> <a href="../wepp/movis.html"><img src="../img/NDMovies.png" width="90" height="40 px"></a> </li>
+                    <li class="menu-list-item"> <a href="../wepp/popular.html"><img src="../img/NDpopular.png" width="90" height="40 px"></a> </li>
+                    <li class="menu-list-item"> <a href="../wepp/More.....html"><img src="../img/NDMore....png" width="90" height="40 px"></a> </li>
+                </ul>
+            </div>
+
+
+
+
+
+
+            <input class="textinput" type="search" id="search" value="" onchange="ouvrirPage()">
+            <input class="button-search" type="button" id="button" onclick="ouvrirPage()" value="search">
+        
+            <script>
+                function ouvrirPage() {
+                    var a = document.getElementById("search").value;
+        
+                    if (a === "Morbius") {
+                        window.open("Morbius.html");
+                    }
+        
+                    if (a === "She Will") {
+                        window.open("She Will.html");
+                    }
+        
+                    if (a === "The Northman") {
+                        window.open("The Northman.html");
+                    }
+                    if (a === "everything Everywhere All at Once") {
+                        window.open("everything Everywhere All at Once.html");
+                    }
+                    if (a === "black adam") {
+                        window.open("black adam.html");
+                    }
+                   
+        
+        
+                }
+            </script>
+
+
+           
+<div class="profile-container">
+    <img class="profile-picture" src="../img/n2.png" alt="">
+    <div class="profile-text-container">
+
+        <a href="../login/login.html"><img src="../img/NDloged in.png" width="80" height="40 px"></a> 
+
+    </div>
+
+
+
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar">
+    </div>
+
+    <div class="container">
+        
+        <div class="content-container">
+            
+            <div class="featured-content"
+            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('../img/n1.png');">
+            <p><h1 class="title">Movie title</h1></p>
+            <br>
+            <img class="featured-title" src="../img/n1.png" alt="">
+            <p class="featured-desc">Movie description...............................................</p>
+        </div>
+        
+        <div class="movie-player">
+          <center>  <iframe width="990" height="560" frameborder="0" src="https://mega.nz/embed/ujwjEJQb#cFd399L_ce4q5PHSKGamLwBakhWCkSWtkSyktvtvFXY!1m" 
+            allowfullscreen ></iframe>
+          </iframe></center>
+        </div>
+      
+        
+
+
+
+        <div class="mother-movie-list-container">
+
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">RECOMMENDED</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+
+                       
+                      
+
+                        
+
+
+                        <div class="movie-list-item">
+                            
+                            <img class="movie-list-item-img" src="../img/Morbius.jpg" alt="">
+                            <span class="movie-list-item-title">Morbius</span>
+                            <p class="movie-list-item-desc">Biochemist Michael Morbius tries to cure himself of a rare blood disease,
+                                 but he inadvertently infects himself with a form of vampirism instead..</p>
+                                 <a href="Morbius.html"><button class="movie-list-item-button">Watch</button></a>
+                                </div>
+
+
+                                <div class="movie-list-item">
+                                    <img class="movie-list-item-img" src="../img/She Will.jpg" alt="">
+                                    <span class="movie-list-item-title">She Will</span>
+                                    <p class="movie-list-item-desc">An aging film star retreats to the Scottish countryside with her nurse to recover from surgery.</p>
+                                    <a href="She Will.html"><button class="movie-list-item-button">Watch</button></a>
+                                </div>
+
+
+                                <div class="movie-list-item">
+                                    <img class="movie-list-item-img" src="../img/black adam.png" alt="">
+                                    <span class="movie-list-item-title">black adam</span>
+                                    <p class="movie-list-item-desc">Nearly 5,000 years after he was bestowed with the almighty powers of the Egyptian gods.</p>
+                                    <a href="black adam.html"><button class="movie-list-item-button">Watch</button></a>
+                                </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../img/Dual.jpg" alt="">
+                            <span class="movie-list-item-title">Dual</span>
+                            <p class="movie-list-item-desc">A woman opts for a cloning procedure after she receives a terminal diagnosis but when she recovers her attempts </p>
+                            <a href="movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../img/Castlevania.png" alt="">
+                            <span class="movie-list-item-title">Castlevania</span>
+                            <p class="movie-list-item-desc">A vampire hunter fights to save a besieged city from an army of otherworldly creatures controlled by Dracula.</p>
+                            <a href="movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../img/The Bad Guys.jpeg" alt="">
+                            <span class="movie-list-item-title">The Bad Guys</span>
+                            <p class="movie-list-item-desc">To avoid prison, a gang of notorious animal criminals pretend to seek being rehabilitated, .</p>
+                            <a href="movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../img/The Northman.png" alt="">
+                            <span class="movie-list-item-title">The Northman</span>
+                            <p class="movie-list-item-desc">A young Viking prince is on a quest to avenge his father's murder..</p>
+                            <a href="The Northman.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+
+                    </div>
+
+                    <i class="fas fa-chevron-right arrow"></i>
+
+                </div>
+                <div class="genra-container">
+                    <h1>Genre</h1>
+                    <br>
+                    <a href="genra/Action.html"><button class="genra-button">Action</button></a>
+                    <a href="genra/Comedy.html"><button class="genra-button">Comedy</button></a>
+                    <a href="genra/Horror.html"><button class="genra-button">Horror</button></a>
+                    <a href="genra/Fantasy.html"><button class="genra-button">Fantasy</button></a>
+                    <a href="genra/Romance.html"><button class="genra-button">Romance</button></a>
+                    <a href="genra/Drama.html"><button class="genra-button">Drama</button></a>
+                    <a href="genra/Romance.html"><button class="genra-button">Science fiction</button></a>
+                    <a href="genra/Drama.html"><button class="genra-button">Crime fiction</button></a>
+                    <a href="genra/Romance.html"><button class="genra-button">Mystery</button></a>
+                    <a href="genra/Drama.html"><button class="genra-button">Western</button></a>
+                    <a href="genra/Romance.html"><button class="genra-button">Thriller</button></a>
+                    <br>
+                    <br>
+                    <h1>Year</h1>
+                    <br>
+                    <a href="year/2022.html"><button class="genra-button">2022</button></a>
+                    <a href="year/2021.html"><button class="genra-button">2021</button></a>
+                    <a href="year/2020.html"><button class="genra-button">2020</button></a>
+                    <a href="year/2019.html"><button class="genra-button">2019</button></a>
+                    <a href="year/2018.html"><button class="genra-button">2018</button></a>
+                    <a href="year/2017.html"><button class="genra-button">2017</button></a>
+                    <a href="year/2018.html"><button class="genra-button">2016</button></a>
+                    <a href="year/2017.html"><button class="genra-button">2015</button></a>
+                    <a href="year/2018.html"><button class="genra-button">2014</button></a>
+                    <a href="year/2017.html"><button class="genra-button">2013</button></a>
+                    <a href="year/2018.html"><button class="genra-button">2012</button></a>
+                </div>
+                <br><br><br><br><br>
+
+            </div>
+            <footer>
+                <div class="footer-container">
+                  <div class="footer-left">
+                    <p>&copy; 2023 Muteb/Abdulelah. All Rights Reserved.</p>
+                  </div>
+                  <div class="footer-middle">
+                    <p>Contact Us:</p>
+                    <ul>
+                      <li><i class="fas fa-map-marker-alt"></i> yanbu university college</li>
+                      <li><i class="fas fa-phone"></i> +9665555555</li>
+                      <li><i class="fas fa-envelope"></i> 4111235@stu.rcyci.edu.sa</li>
+                      <div class="about-us">
+                        <h3><a href="../AboutUs.html">About Us</a></h3>
+                    </div>
+                    </ul>
+                  </div>
+                  <div class="footer-right">
+                    <p>Follow Us:</p>
+                    <ul>
+                      <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                      <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                      <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </footer>
+        </div> 
+
+    <script src="../app.js"></script>
+    
+</body>
+
+</html> 

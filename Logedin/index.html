@@ -1,0 +1,853 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+
+    <title>MovieLand</title>
+</head>
+
+<body>
+
+<!-- This part contains navbar items  -->
+
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <img src="img/NDLogo.png" width="150" height=" 70px">
+            </div>
+         <!-- This part contains the maine three windows  -->
+
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item"> <a href="index.html"><img src="img/NDHome.png" width="90" height=" 40px"></a> </li>
+                    <li class="menu-list-item"> <a href="wepp/movis.html"><img src="img/NDMovies.png" width="90" height="40 px"></a> </li>
+                    <li class="menu-list-item"> <a href="wepp/popular.html"><img src="img/NDpopular.png" width="90" height="40 px"></a> </li>
+                    <li class="menu-list-item"> <a href="wepp/More.....html"><img src="img/NDMore....png" width="90" height="40 px"></a> </li>
+
+                </ul>
+            </div>
+
+
+             <!-- This part contains the search function -->
+
+            <input class="textinput" type="search" id="search" value="" onchange="ouvrirPage()">
+            <input class="button-search" type="button" id="button" onclick="ouvrirPage()" value="search">
+            
+            <script>
+                function ouvrirPage() {
+                    var a = document.getElementById("search").value;
+        
+                    if (a === "Morbius") {
+                        window.open("movies/Morbius.html");
+                    }
+        
+                    if (a === "She Will") {
+                        window.open("movies/She Will.html");
+                    }
+        
+                    if (a === "The Northman") {
+                        window.open("movies/The Northman.html");
+                    }
+                    
+                    if (a === "everything Everywhere All at Once") {
+                        window.open("movies/everything Everywhere All at Once.html");
+                    }
+
+                    if (a === "black adam") {
+                        window.open("movies/black adam.html");
+                    }
+                                          
+                }
+            </script>
+
+ 
+
+<!-- This part leads us to the login function  -->
+
+            <div class="profile-container">
+                <img class="profile-picture" src="img/n2.png" alt="">
+                <div class="profile-text-container">
+
+                  <a href="login/login.html"><img src="img/NDloged in.png" width="80" height="40 px"></a> 
+
+                </div>
+
+<!-- This part allows us to change the window mode  -->
+
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+<!-- This part  is container of the content  -->
+
+    <div class="container">
+        <div class="content-container">
+
+            <!-- This part contain the Most popular  -->
+
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/8287725.jpg');">
+                <p> <h1 class="title">Most popular</h1></p>
+                <br>
+                <p><h1 class="title">everything Everywhere All at Once</h1></p>
+    <br>
+
+      <!-- This part contain the the img and the description of the movie  -->
+
+                <img class="featured-title" src="img/m1.jpg" alt="">
+                <p class="featured-desc">An aging Chinese immigrant is swept up in an insane adventure, in which she alone can save the world by exploring 
+                    other universes connecting with the lives she could have led.</p>
+                <a href="movies/everything Everywhere All at Once.html"><button class="featured-button">WATCH</button></a>
+            </div>
+
+<br><br><br><br>
+
+
+<!-- This part is the container of the movie list   -->
+            
+                 <div class="movie-list-container">
+                <h1 class="movie-list-title">NEW RELEASES</h1>
+                <div class="movie-list-wrapper">
+
+
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Morbius.jpg" alt="">
+                            <span class="movie-list-item-title">Morbius</span>
+
+                            <p class="movie-list-item-desc">Biochemist Michael Morbius tries to cure himself of a rare blood disease,
+                                 but he inadvertently infects himself with a form of vampirism instead..</p>
+
+                                 <a href="movies/Morbius.html"><button class="movie-list-item-button">Watch</button></a>
+                                </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/The Northman.png" alt="">
+                            <span class="movie-list-item-title">The Northman</span>
+                            <p class="movie-list-item-desc">A young Viking prince is on a quest to avenge his father's murder..</p>
+                            <a href="movies/The Northman.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/She Will.jpg" alt="">
+                            <span class="movie-list-item-title">She Will</span>
+                            <p class="movie-list-item-desc">An aging film star retreats to the Scottish countryside with her nurse to recover from surgery.</p>
+                            <a href="movies/She Will.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/black adam.png" alt="">
+                            <span class="movie-list-item-title">black adam</span>
+                            <p class="movie-list-item-desc">Nearly 5,000 years after he was bestowed with the almighty powers of the Egyptian gods.</p>
+                            <a href="movies/black adam.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Dual.jpg" alt="">
+                            <span class="movie-list-item-title">Dual</span>
+                            <p class="movie-list-item-desc">A woman opts for a cloning procedure after she receives a terminal diagnosis but when she recovers her attempts </p>
+                            <a href="movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Castlevania.png" alt="">
+                            <span class="movie-list-item-title">Castlevania</span>
+                            <p class="movie-list-item-desc">A vampire hunter fights to save a besieged city from an army of otherworldly creatures controlled by Dracula.</p>
+                            <a href="movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+
+                        
+
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/The Godfather.jpg" alt="">
+                            <span class="movie-list-item-title">The Godfather</span>
+                            <p class="movie-list-item-desc">The aging patriarch of an organized crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant youngest son.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+    
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/The Lighthouse.jpg" alt="">
+                            <span class="movie-list-item-title">The Lighthouse</span>
+                            <p class="movie-list-item-desc">In a North Dublin housing estate Char's mother goes missing.</p>
+                            <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+    
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/It Chapter Two.jpg" alt="">
+                            <span class="movie-list-item-title">It Chapter Two</span>
+                            <p class="movie-list-item-desc">The aging patriarch of an organized crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant youngest son.</p>
+                            <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+    
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Interstellar.jpg" alt="">
+                            <span class="movie-list-item-title">Interstellar</span>
+                            <p class="movie-list-item-desc">A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+    
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Bullet Train.jpg" alt="">
+                            <span class="movie-list-item-title">Bullet Train</span>
+                            <p class="movie-list-item-desc">Five assassins aboard a swiftly-moving bullet train find out that their missions have something in common.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+    
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Us.png" alt="">
+                            <span class="movie-list-item-title">Us</span>
+                            <p class="movie-list-item-desc">The aging patriarch of an organized crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant youngest son.</p>
+                            <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+    
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/El hoyo.jpg" alt="">
+                            <span class="movie-list-item-title">El hoyo</span>
+                            <p class="movie-list-item-desc">A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.</p>
+                            <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Enola Holmes.jpg" alt="">
+                            <span class="movie-list-item-title">Enola Holmes</span>
+                            <p class="movie-list-item-desc">When Enola Holmes-Sherlock's teen sister-discovers her mother 
+                                is missing, she sets off to find her,</p>
+                                <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                            </div>
+
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/American Psycho.jpg" alt="">
+                            <span class="movie-list-item-title">American Psycho</span>
+                            <p class="movie-list-item-desc">The aging patriarch of an organized crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant youngest son.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Deadpool 2.jpg" alt="">
+                            <span class="movie-list-item-title">Deadpool 2</span>
+                            <p class="movie-list-item-desc">Foul-mouthed mutant mercenary Wade Wilson (a.k.a. Deadpool) assembles a team of fellow mutant rogues to protect a young</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Tenet.jpg" alt="">
+                            <span class="movie-list-item-title">Tenet</span>
+                            <p class="movie-list-item-desc">Armed with only one word, Tenet, and fighting for the survival 
+                                of the entire world, a Protagonist journeys through </p>
+                                <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                            </div>
+
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/Dual.jpg" alt="">
+                                <span class="movie-list-item-title">Dual</span>
+                                <p class="movie-list-item-desc">A woman opts for a cloning procedure after she receives a terminal diagnosis but when she recovers her attempts </p>
+                                <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                            </div>
+    
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/Promising Young Woman.jpg" alt="">
+                                <span class="movie-list-item-title">Promising</span>
+                                <p class="movie-list-item-desc">A young woman, traumatized by a tragic event in her past, seeks out vengeance against those who crossed her path.</p>
+                                <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                            </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Joker.jpg" alt="">
+                            <span class="movie-list-item-title">Joker
+                            </span>
+                            <p class="movie-list-item-desc">A mentally troubled stand-up comedian embarks on a downward spiral that leads to the creation of an iconic villain..</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                         
+                    </div>
+
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+
+                </div>
+
+                 
+                <!-- This part leads to the genre and the year -->
+                
+                 <!--1-->
+
+           
+            
+                
+                    <div class="movie-list-container">
+                     <h1 class="movie-list-title">Popular this monthes</h1>
+                     <div class="movie-list-wrapper">
+
+
+                        <div class="movie-list">
+
+
+                            
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Yellowjackets.jpeg" alt="">
+                            <span class="movie-list-item-title">Yellowjackets</span>
+                            <p class="movie-list-item-desc">A wildly talented high school girl soccer team becomes the (un)lucky survivors of a plane crash deep in the Canadian wilderness.</p>
+                            <a href="movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+
+                         <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/Evil.jpg" alt="">
+                            <span class="movie-list-item-title">Evil</span>
+                            <p class="movie-list-item-desc">A skeptical clinical psychologist joins a priest-in-training and a blue collar contractor as they investigate supposed abnormal events,.</p>
+                            <a href="movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                          </div>
+
+                         <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Okja.jpeg" alt="">
+                            <span class="movie-list-item-title">Okja</span>
+                            <p class="movie-list-item-desc">A young girl risks everything to prevent a powerful, multinational company from kidnapping her best friend - a fascinating beast named Okja.</p>
+                            <a href="movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Ambulance.jpg" alt="">
+                            <span class="movie-list-item-title">Ambulance</span>
+                            <p class="movie-list-item-desc">Two robbers steal an ambulance after their heist goes awry.</p>
+                            <a href="movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/You Are Not My Mother.jpg" alt="">
+                            <span class="movie-list-item-title">You Are Not My Mother</span>
+                            <p class="movie-list-item-desc">In a North Dublin housing estate Char's mother goes missing.</p>
+                            <a href="movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/The Cellar.jpg" alt="">
+                            <span class="movie-list-item-title">The Cellar</span>
+                            <p class="movie-list-item-desc">Keira Woods' daughter mysteriously vanishes in the cellar of their new house.</p>
+                            <a href="movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Gold.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">In the not too distant future, a drifter (Zac Efron) travelling through the desert discovers the largest gold nugget ever found</p>
+                            <a href="movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Okja.jpeg" alt="">
+                            <span class="movie-list-item-title">Okja</span>
+                            <p class="movie-list-item-desc">A young girl risks everything to prevent a powerful, multinational company from kidnapping her best friend - a fascinating beast named Okja.</p>
+                            <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+    
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/American Psycho.jpg" alt="">
+                            <span class="movie-list-item-title">American Psycho</span>
+                            <p class="movie-list-item-desc">The aging patriarch of an organized crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant youngest son.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+    
+                       <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/run.jpg" alt="">
+                                <span class="movie-list-item-title">run</span>
+                                <p class="movie-list-item-desc">A homeschooled teenager begins to suspect her mother is keeping a dark secret from her.                            </p>
+                                <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                            </div>
+    
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/The Devil All the Time.jpg" alt="">
+                                <span class="movie-list-item-title"> The Devil All the Time</span>
+                                <p class="movie-list-item-desc">The aging patriarch of an organized crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant youngest son.</p>
+                                <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                            </div>
+    
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Greenland.jpg" alt="">
+                            <span class="movie-list-item-title">Greenland</span>
+                            <p class="movie-list-item-desc">A wildly talented high school girl soccer team becomes the (un)lucky survivors of a plane crash deep in the Canadian wilderness.</p>
+                            <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+    
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Hamilton.jpg" alt="">
+                            <span class="movie-list-item-title">Hamilton</span>
+                            <p class="movie-list-item-desc">Two robbers steal an ambulance after their heist goes awry.</p>
+                            <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+    
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Joker.jpg" alt="">
+                            <span class="movie-list-item-title">Joker
+                            </span>
+                            <p class="movie-list-item-desc">A mentally troubled stand-up comedian embarks on a downward spiral that leads to the creation of an iconic villain..</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/The Black Phone.jpg" alt="">
+                            <span class="movie-list-item-title">The Black Phone</span>
+                            <p class="movie-list-item-desc">A vampire hunter fights to save a besieged city from an army of otherworldly creatures controlled by Dracula.</p>
+                            <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Sing 2.jpg" alt="">
+                            <span class="movie-list-item-title">Sing 2                            </span>
+                            <p class="movie-list-item-desc">Buster Moon and his friends must persuade reclusive rock 
+                                star Clay Calloway to join them for the opening of a new show.</p>
+                                <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                            </div>
+
+                       <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Eternals.jpg" alt="">
+                            <span class="movie-list-item-title">Eternals</span>
+                            <p class="movie-list-item-desc">The saga of the Eternals, a race of immortal beings who lived on
+                                 Earth and shaped its history and civilizations.</p>
+                                 <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                                </div>
+
+                                <div class="movie-list-item">
+                                    <img class="movie-list-item-img" src="img/Ghostbusters Afterlife.jpg" alt="">
+                                    <span class="movie-list-item-title">Ghostbusters Afterlife</span>
+                                    <p class="movie-list-item-desc">When a single mom and her two kids arrive in a small town,.</p>
+                                    <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                                </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/You Are Not My Mother.jpg" alt="">
+                            <span class="movie-list-item-title">You Are Not My Mother</span>
+                            <p class="movie-list-item-desc">In a North Dublin housing estate Char's mother goes missing.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/The King's Man.jpg" alt="">
+                            <span class="movie-list-item-title">The King's Man</span>
+                            <p class="movie-list-item-desc">In the early years of the 20th century, the Kingsman agency is formed to stand
+                                 against a cabal plotting a war to wipe out millions..</p>
+                                 <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                                </div>
+
+                                <div class="movie-list-item">
+                                    <img class="movie-list-item-img" src="img/The Matrix Resurrections.png" alt="">
+                                    <span class="movie-list-item-title">The Matrix Resurrections</span>
+                                    <p class="movie-list-item-desc">Return to a world of two realities: one, everyday life; the other, what lies behind it. To find out 
+                                        if his reality is a construct, to truly know himself,</p>
+                                        <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                                    </div>
+        
+                    </div>
+                
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/1091811.jpg');">
+                <p> <h3 class="title">Most popular show</h3></p>
+                <br>
+
+                <p><h1 class="title">better call saul </h1></p>
+                <br>
+                <img class="featured-title" src="img/Better_Call_Saul_logo.svg.png" alt="">
+                <p class="featured-desc">The trials and tribulations of criminal lawyer Jimmy McGill in the years leading up to his fateful run-in with Walter White and Jesse Pinkman</p>
+                <a href="movies/genral movie.html"><button class="featured-button">WATCH</button></a>
+            </div>
+            
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">My Recommendation</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/The Godfather.jpg" alt="">
+                            <span class="movie-list-item-title">The Godfather</span>
+                            <p class="movie-list-item-desc">The aging patriarch of an organized crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant youngest son.</p>
+                            <a href="movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/American Psycho.jpg" alt="">
+                            <span class="movie-list-item-title">American Psycho</span>
+                            <p class="movie-list-item-desc">The aging patriarch of an organized crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant youngest son.</p>
+                            <a href="movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Deadpool 2.jpg" alt="">
+                            <span class="movie-list-item-title">Deadpool 2</span>
+                            <p class="movie-list-item-desc">Foul-mouthed mutant mercenary Wade Wilson (a.k.a. Deadpool) assembles a team of fellow mutant rogues to protect a young</p>
+                            <a href="movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Interstellar.jpg" alt="">
+                            <span class="movie-list-item-title">Interstellar</span>
+                            <p class="movie-list-item-desc">A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.</p>
+                            <a href="movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Bullet Train.jpg" alt="">
+                            <span class="movie-list-item-title">Bullet Train</span>
+                            <p class="movie-list-item-desc">Five assassins aboard a swiftly-moving bullet train find out that their missions have something in common.</p>
+                            <a href="movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/top gun maverick.jpg" alt="">
+                            <span class="movie-list-item-title">Top Gun: Maverick</span>
+                            <p class="movie-list-item-desc">After thirty years, Maverick is still pushing the envelope as a top naval aviator,</p>
+                            <a href="movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Joker.jpg" alt="">
+                            <span class="movie-list-item-title">Joker
+                            </span>
+                            <p class="movie-list-item-desc">A mentally troubled stand-up comedian embarks on a downward spiral that leads to the creation of an iconic villain..</p>
+                            <a href="movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                            
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Weird The Al Yankovic Story.jpg" alt="">
+                            <span class="movie-list-item-title">Weird The Al Yankovic Story</span>
+                            <p class="movie-list-item-desc">The aging patriarch of an organized crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant youngest son.</p>
+                            <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Falling for Christmas.jpg" alt="">
+                            <span class="movie-list-item-title">Falling for Christmas</span>
+                            <p class="movie-list-item-desc">After thirty years, Maverick is still pushing the envelope as a top naval aviator,</p>
+                            <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Bullet Train.jpg" alt="">
+                            <span class="movie-list-item-title">Bullet Train</span>
+                            <p class="movie-list-item-desc">Five assassins aboard a swiftly-moving bullet train find out that their missions have something in common.</p>
+                            <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Sing 2.jpg" alt="">
+                            <span class="movie-list-item-title">Sing 2                            </span>
+                            <p class="movie-list-item-desc">Buster Moon and his friends must persuade reclusive rock 
+                                star Clay Calloway to join them for the opening of a new show.</p>
+                                <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                            </div>
+
+
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/Licorice Pizza.jpg" alt="">
+                                <span class="movie-list-item-title">Licorice Pizza</span>
+                                <p class="movie-list-item-desc">The story of Alana Kane and Gary Valentine growing up, running around and going through the treacherous 
+                                    navigation of first love in the San Fernando Valley, 1973.</p>
+                                    <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                                </div>
+
+                                <div class="movie-list-item">
+                                    <img class="movie-list-item-img" src="img/CODA.jpg" alt="">
+                                    <span class="movie-list-item-title">CODA</span>
+                                    <p class="movie-list-item-desc">As a CODA (Child of Deaf Adults) Ruby is the only hearing person in her deaf 
+                                        family. When the family's fishing business is threatened,</p>
+                                        <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                                   
+                                    </div>
+
+
+                                    <div class="movie-list-item">
+                                        <img class="movie-list-item-img" src="img/Spider-Man Homecoming.jpg" alt="">
+                                        <span class="movie-list-item-title">Spider-Man Homecoming</span>
+                                        <p class="movie-list-item-desc">Foul-mouthed mutant mercenary Wade Wilson (a.k.a. Deadpool) assembles a team of fellow mutant rogues to protect a young</p>
+                                        <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                                    </div>
+                
+                                    <div class="movie-list-item">
+                                        <img class="movie-list-item-img" src="img/Wonder Woman.jpg" alt="">
+                                        <span class="movie-list-item-title">Wonder Woman</span>
+                                        <p class="movie-list-item-desc">After thirty years, Maverick is still pushing the envelope as a top naval aviator,</p>
+                                        <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                                    </div>
+                
+                                    <div class="movie-list-item">
+                                        <img class="movie-list-item-img" src="img/Justice League.jpeg" alt="">
+                                        <span class="movie-list-item-title">Justice League</span>
+                                        <p class="movie-list-item-desc">A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.</p>
+                                        <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                                    </div>
+                
+                                    <div class="movie-list-item">
+                                        <img class="movie-list-item-img" src="img/Interstellar.jpg" alt="">
+                                        <span class="movie-list-item-title">Interstellar</span>
+                                        <p class="movie-list-item-desc">A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.</p>
+                                        <button class="movie-list-item-button">Watch</button>
+                                    </div>
+                
+                                    <div class="movie-list-item">
+                                        <img class="movie-list-item-img" src="img/Bullet Train.jpg" alt="">
+                                        <span class="movie-list-item-title">Bullet Train</span>
+                                        <p class="movie-list-item-desc">Five assassins aboard a swiftly-moving bullet train find out that their missions have something in common.</p>
+                                        <button class="movie-list-item-button">Watch</button>
+                                    </div>
+                
+                                  <div class="movie-list-item">
+                                        <img class="movie-list-item-img" src="img/Baywatch.jpg" alt="">
+                                        <span class="movie-list-item-title">Baywatch</span>
+                                        <p class="movie-list-item-desc">The aging patriarch of an organized crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant youngest son.</p>
+                                        <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                                    </div>
+                
+                                    <div class="movie-list-item">
+                                        <img class="movie-list-item-img" src="../mg/Joker.jpg" alt="">
+                                        <span class="movie-list-item-title">Joker
+                                        </span>
+                                        <p class="movie-list-item-desc">A mentally troubled stand-up comedian embarks on a downward spiral that leads to the creation of an iconic villain..</p>
+                                        <button class="movie-list-item-button">Watch</button>
+                                    </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+
+                <div class="genra-container">
+                    <h1>Genre</h1>
+                    <br>
+                    <a href="genra/Action.html"><button class="genra-button">Action</button></a>
+                    <a href="genra/Comedy.html"><button class="genra-button">Comedy</button></a>
+                    <a href="genra/Horror.html"><button class="genra-button">Horror</button></a>
+                    <a href="genra/Fantasy.html"><button class="genra-button">Fantasy</button></a>
+                    <a href="genra/Romance.html"><button class="genra-button">Romance</button></a>
+                    <a href="genra/Drama.html"><button class="genra-button">Drama</button></a>
+                    <a href="genra/Romance.html"><button class="genra-button">Science fiction</button></a>
+                    <a href="genra/Drama.html"><button class="genra-button">Crime fiction</button></a>
+                    <a href="genra/Romance.html"><button class="genra-button">Mystery</button></a>
+                    <a href="genra/Drama.html"><button class="genra-button">Western</button></a>
+                    <a href="genra/Romance.html"><button class="genra-button">Thriller</button></a>
+                    <br>
+                    <br>
+                    <h1>Year</h1>
+                    <br>
+                    <a href="year/2022.html"><button class="genra-button">2022</button></a>
+                    <a href="year/2021.html"><button class="genra-button">2021</button></a>
+                    <a href="year/2020.html"><button class="genra-button">2020</button></a>
+                    <a href="year/2019.html"><button class="genra-button">2019</button></a>
+                    <a href="year/2018.html"><button class="genra-button">2018</button></a>
+                    <a href="year/2017.html"><button class="genra-button">2017</button></a>
+                    <a href="year/2018.html"><button class="genra-button">2016</button></a>
+                    <a href="year/2017.html"><button class="genra-button">2015</button></a>
+                    <a href="year/2018.html"><button class="genra-button">2014</button></a>
+                    <a href="year/2017.html"><button class="genra-button">2013</button></a>
+                    <a href="year/2018.html"><button class="genra-button">2012</button></a>
+                </div>
+               
+                
+            </div>
+              
+        <div class="movie-list-container">
+            <div class="movie-list-wrapper">
+
+                <div class="movie-list">
+
+                   <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Licorice Pizza.jpg" alt="">
+                            <span class="movie-list-item-title">Licorice Pizza</span>
+                            <p class="movie-list-item-desc">The story of Alana Kane and Gary Valentine growing up, running around and going through the treacherous 
+                                navigation of first love in the San Fernando Valley, 1973.</p>
+                                <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                            </div>
+
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/American Psycho.jpg" alt="">
+                        <span class="movie-list-item-title">American Psycho</span>
+                        <p class="movie-list-item-desc">The aging patriarch of an organized crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant youngest son.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/Ghostbusters Afterlife.jpg" alt="">
+                        <span class="movie-list-item-title">Ghostbusters Afterlife</span>
+                        <p class="movie-list-item-desc">When a single mom and her two kids arrive in a small town,.</p>
+                        <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                    </div>
+
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/CODA.jpg" alt="">
+                        <span class="movie-list-item-title">CODA</span>
+                        <p class="movie-list-item-desc">As a CODA (Child of Deaf Adults) Ruby is the only hearing person in her deaf 
+                            family. When the family's fishing business is threatened,</p>
+                            <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Licorice Pizza.jpg" alt="">
+                            <span class="movie-list-item-title">Licorice Pizza</span>
+                            <p class="movie-list-item-desc">The story of Alana Kane and Gary Valentine growing up, running around and going through the treacherous 
+                                navigation of first love in the San Fernando Valley, 1973.</p>
+                                <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                            </div>
+
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/top gun maverick.jpg" alt="">
+                        <span class="movie-list-item-title">Top Gun: Maverick</span>
+                        <p class="movie-list-item-desc">After thirty years, Maverick is still pushing the envelope as a top naval aviator,</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/Joker.jpg" alt="">
+                        <span class="movie-list-item-title">Joker
+                        </span>
+                        <p class="movie-list-item-desc">A mentally troubled stand-up comedian embarks on a downward spiral that leads to the creation of an iconic villain..</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/Get Out.jpg" alt="">
+                        <span class="movie-list-item-title">Get Out</span>
+                        <p class="movie-list-item-desc">To avoid prison, a gang of notorious animal criminals pretend to seek being rehabilitated, .</p>
+                        <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                    </div>
+
+
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/Blade Runner 2049.jpg" alt="">
+                        <span class="movie-list-item-title">Blade Runner 2049</span>
+                        <p class="movie-list-item-desc">Biochemist Michael Morbius tries to cure himself of a rare blood disease,
+                             but he inadvertently infects himself with a form of vampirism instead..</p>
+                             <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                            </div>
+
+
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/Wind River.jpeg" alt="">
+                        <span class="movie-list-item-title">Wind River</span>
+                        <p class="movie-list-item-desc">An aging film star retreats to the Scottish countryside with her nurse to recover from surgery.</p>
+                        <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                    </div>
+
+
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/Dunkirk.jpg" alt="">
+                        <span class="movie-list-item-title">Dunkirk</span>
+                        <p class="movie-list-item-desc">Nearly 5,000 years after he was bestowed with the almighty powers of the Egyptian gods.</p>
+                        <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                    </div>
+
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/The Greatest Showman.png" alt="">
+                        <span class="movie-list-item-title">The Greatest Showman</span>
+                        <p class="movie-list-item-desc">A woman opts for a cloning procedure after she receives a terminal diagnosis but when she recovers her attempts </p>
+                        <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                    </div>
+
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/Coco.jpeg" alt="">
+                        <span class="movie-list-item-title">Coco</span>
+                        <p class="movie-list-item-desc">A vampire hunter fights to save a besieged city from an army of otherworldly creatures controlled by Dracula.</p>
+                        <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/Baywatch.jpg" alt="">
+                        <span class="movie-list-item-title">Baywatch</span>
+                        <p class="movie-list-item-desc">The aging patriarch of an organized crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant youngest son.</p>
+                        <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                    </div>
+
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/American Psycho.jpg" alt="">
+                        <span class="movie-list-item-title">American Psycho</span>
+                        <p class="movie-list-item-desc">The aging patriarch of an organized crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant youngest son.</p>
+                        <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                    </div>
+
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/Spider-Man Homecoming.jpg" alt="">
+                        <span class="movie-list-item-title">Spider-Man Homecoming</span>
+                        <p class="movie-list-item-desc">Foul-mouthed mutant mercenary Wade Wilson (a.k.a. Deadpool) assembles a team of fellow mutant rogues to protect a young</p>
+                        <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                    </div>
+
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/Justice League.jpeg" alt="">
+                        <span class="movie-list-item-title">Justice League</span>
+                        <p class="movie-list-item-desc">A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.</p>
+                        <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                    </div>
+
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/Logan.jpg" alt="">
+                        <span class="movie-list-item-title">Logan</span>
+                        <p class="movie-list-item-desc">Five assassins aboard a swiftly-moving bullet train find out that their missions have something in common.</p>
+                        <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                    </div>
+
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/Ingrid Goes West.jpg" alt="">
+                        <span class="movie-list-item-title">Ingrid Goes Westk</span>
+                        <p class="movie-list-item-desc">After thirty years, Maverick is still pushing the envelope as a top naval aviator,</p>
+                        <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                    </div>
+
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/Joker.jpg" alt="">
+                        <span class="movie-list-item-title">Joker
+                        </span>
+                        <p class="movie-list-item-desc">A mentally troubled stand-up comedian embarks on a downward spiral that leads to the creation of an iconic villain..</p>
+                        <a href="../movies/genral movie.html"><button class="movie-list-item-button">Watch</button></a>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right arrow"></i>
+            </div>
+            
+        </div>
+        
+       
+    </div>
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-left">
+            <p>&copy; 2023 Muteb/Abdulelah. All Rights Reserved.</p>
+          </div>
+          <div class="footer-middle">
+            <p>Contact Us:</p>
+            <ul>
+              <li><i class="fas fa-map-marker-alt"></i> yanbu university college</li>
+              <li><i class="fas fa-phone"></i> +9665555555</li>
+              <li><i class="fas fa-envelope"></i> 4111235@stu.rcyci.edu.sa</li>
+              <div class="about-us">
+                <h3><a href="AboutUs.html">About Us</a></h3>
+              </div>
+            </ul>
+          </div>
+          <div class="footer-right">
+            <p>Follow Us:</p>
+            <ul>
+              <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      
+    <script src="app.js"></script>
+</body>
+
+</html>
